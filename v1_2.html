@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="charset" content="UTF-8" />
+		<title>FasT&amp;T - EPCIS Sandbox</title>
+	</head>
+	<body>
+		<menu>
+			<a href="index.html">Home</a>
+			<a href="v1_2.html">EPCIS 1.2</a>
+			<a href="v2_0.html">EPCIS 2.0</a>
+			<a href="sandbox.html">Sandbox</a>
+			<a href="contact.html">Contact</a>
+		</menu>
+		
+		<h1>FasT&amp;T - EPCIS 1.2 endpoints</h1>
+		
+		<section id="functionalities">
+			<h2>Implemented functionalities</h2>
+			<p>FasT&amp;T is a full implementation of the EPCIS 1.2 specification, and include several HTTP endpoints to allow managing the data.</p>
+			<ul>
+				<li>Capture</li>
+				<ul>
+					<li>Events</li>
+					<li>Capture Master Data (CBV)</li>
+				</ul>
+				<li>Queries:</li>
+				<ul>
+					<li>GetVendorVersion</li>
+					<li>GetStandardVersion</li>
+					<li>GetQueryNames</li>
+					<li>GetSubsciptionIDs</li>
+					<li>Poll:</li>
+					<ul>
+						<li>SimpleEventQuery</li>
+						<li>SimpleMasterDataQuery</li>
+					</ul>
+				</ul>
+				<li>Query Callback:</li>
+				<ul>
+					<li>CallbackResults</li>
+					<li>CallbackQueryTooLargeException</li>
+					<li>CallbackImplementationException</li>
+				</ul>
+				<li>Subscriptions:</li>
+				<ul>
+					<li>Subscribe to an EPCIS request</li>
+					<li>Unsubscribe from EPCIS repository</li>
+					<li>Trigger subscriptions that register to specific trigger name</li>
+					<li>Execute subscription based on schedule</li>
+				</ul>
+			</ul>
+		</section>
+	</body>
+</html>

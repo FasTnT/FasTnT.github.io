@@ -8,12 +8,16 @@
 	<body>
 		<menu>
 			<a href="index.html">Home</a>
+			<a href="v1_2.html">EPCIS 1.2</a>
+			<a href="v2_0.html">EPCIS 2.0</a>
 			<a href="sandbox.html">Sandbox</a>
+			<a href="contact.html">Contact</a>
 		</menu>
 		
 		<h1>FasT&amp;T - EPCIS Sandbox</h1>
-
-		<section id="setup">
+		
+		<section id="introduction">
+			<p><strong style="background:yellow;">As of September 2022 the sandbox isn't available, and it's unknown when it'll be online. Sorry for the inconvenience.</strong></p>
 			<h2>Introduction</h2>
 			<p>The Sandbox is a full EPCIS repository that allows you to use and test your EPCIS capture/queries. It's free and doesn't need any registeration or setup, so start to use it right now!</p>
 			<p>The base URL of this sandbox is <a href="https://fastnt-dev-api.azurewebsites.net/">https://fastnt-dev-api.azurewebsites.net/</a>. There is a <a href="https://www.postman.com/galactic-robot-8485/workspace/fast-t-epcis/overview">Postman Workspace</a> awailable that allow you to easily make queries on this repository.</p>
@@ -36,8 +40,7 @@ Content-Type:text/xml
 	schemaVersion="1.2" 
 	creationDate="2018-06-12T06:31:32Z"&gt;
 	...
-&lt;/epcis:EPCISDocument&gt;			
-			</pre>
+&lt;/epcis:EPCISDocument&gt;</pre>
 			<h3>Perform Queries</h3>
 			<pre>POST https://fastnt-dev-api.azurewebsites.net/v1_2/query.svc
 Authorization: Basic username:password
@@ -49,8 +52,7 @@ Content-Type:application/xml
 	&lt;soapenv:Body&gt;
 		...
 	&lt;/soapenv:Body&gt;
-&lt;/soapenv:Envelope&gt;	
-			</pre>
+&lt;/soapenv:Envelope&gt;</pre>
 		</section>
 		
 		<section id="restrictions">

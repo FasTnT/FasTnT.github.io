@@ -5,11 +5,16 @@
 
 body{
 	margin:0 auto;
-	max-width:960px;
+	max-width:920px;
+	padding:0 20px;
 }
 
 h1{
 	font-size:300%;
+	color: #fff;
+	display:inline-block;
+	background: #00a2d7;
+	padding:5px 15px;
 }
 
 menu{
