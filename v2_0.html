@@ -16,10 +16,40 @@
 		
 		<h1>FasT&amp;T - EPCIS 2.0 endpoints</h1>
 		
-		<section id="status">
-			<h2>Work in progress...</h2>
-			<p>The roadmap of FasT&amp;T has the implementation of the latest 2.0 specification. The development has started and is active, but there is no current roadmap on when it will be available.</p>
-			<p>The version 1.2 and 2.0 will exist in parallel in the same repository</p>
+		<section id="functionalities">
+			<h2>Implemented functionalities</h2>
+			<p>FasT&amp;T is an implementation of the EPCIS 2.0 specification, and include several HTTP endpoints to allow managing the data.</p>
+			<ul>
+				<li>Capture</li>
+				<ul>
+					<li>Capture list of Events</li>
+					<li>Capture single event</li>
+				</ul>
+				<li>Queries:</li>
+				<ul>
+					<li>List events (+ filters)</li>
+					<li>Create a named query</li>
+					<li>Execute a named query</li>
+				</ul>
+				<li>Subscriptions:</li>
+				<ul>
+					<li>Subscribe to a named query via webhooks</li>
+				</ul>
+				<li>Discovery:</li>
+				<ul>
+					<li>EventType discovery endpoint</li>
+					<li>EPCs discovery endpoint</li>
+					<li>Business Steps discovery endpoint</li>
+					<li>Business Locations discovery endpoint</li>
+					<li>Read Points discovery endpoint</li>
+					<li>Dispositions discovery endpoint</li>
+				</ul>
+			</ul>
+		</section>
+		
+		<section id="compatibility">
+			<p>All the events captured using the v2.0 endpoints are compatible with the v1.2 endpoints and vice-versa.</p>
+			<p>Likely, all the events captured can be queried in either XML of JSON format independently of the language used to capture them.</p>
 		</section>
 	</body>
 </html>
