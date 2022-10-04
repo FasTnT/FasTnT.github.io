@@ -19,7 +19,7 @@
 
 		<section id="introduction">
 			<h2>Introduction</h2>
-			<p>FasTnT EPCIS is an implementation of the GS1 EPCIS 1.2 specification in .NET.</p>
+			<p>FasTnT EPCIS is an implementation of the GS1 EPCIS 2.0 and 1.2 specification in .NET.</p>
 			<p></p>
 		</section>
 		
@@ -34,8 +34,8 @@
 
 			<h3>Steps:</h3>
 			<ol>
-				<li><a href="https://github.com/FasTnT/epcis-ef-core/archive/refs/heads/main.zip">Download</a> the source code or <a href="https://github.com/FasTnT/epcis-ef-core.git">clone</a> the repository on GitHub;</li>
-				<li>Start the repository with the command <code>$ dotnet run -p FasTnT.Host\FasTnT.Host.csproj --urls "http://localhost:5102/" --connectionStrings:FasTnT.Database "{your connectionstring}"</code></li>
+				<li><a href="https://github.com/louisaxel-ambroise/epcis/releases/latest">Download</a> the source code or <a href="https://github.com/louisaxel-ambroise/epcis.git">clone</a> the repository on GitHub;</li>
+				<li>Start the repository with the command <code>$ dotnet run -p src\FasTnT.Host\FasTnT.Host.csproj --urls "http://localhost:5102/" --connectionStrings:FasTnT.Database "{your connectionstring}"</code></li>
 			</ol>
 			
 			<p>That's it! The database should be created automatically and you should be able to use the endpoints to capture or query events.</p>
