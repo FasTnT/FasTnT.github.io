@@ -17,10 +17,9 @@
 		<h1>FasT&amp;T - EPCIS Sandbox</h1>
 		
 		<section id="introduction">
-			<p><strong style="background:yellow;">As of September 2022 the sandbox isn't available, and it's unknown when it'll be online. Sorry for the inconvenience.</strong></p>
 			<h2>Introduction</h2>
 			<p>The Sandbox is a full EPCIS repository that allows you to use and test your EPCIS capture/queries. It's free and doesn't need any registeration or setup, so start to use it right now!</p>
-			<p>The base URL of this sandbox is <a href="https://fastnt-dev-api.azurewebsites.net/">https://fastnt-dev-api.azurewebsites.net/</a>. There is a <a href="https://www.postman.com/galactic-robot-8485/workspace/fast-t-epcis/overview">Postman Workspace</a> awailable that allow you to easily make queries on this repository.</p>
+			<p>The base URL of this sandbox is <a href="https://fastnt-dev.azurewebsites.net/">https://fastnt-dev.azurewebsites.net/</a>. There is a <a href="https://www.postman.com/galactic-robot-8485/workspace/fast-t-epcis/overview">Postman Workspace</a> awailable that allow you to easily make queries on this repository.</p>
 		</section>
 		
 		<section id="howto">
@@ -28,10 +27,11 @@
 			<p>A <a href="https://raw.githubusercontent.com/FasTnT/epcis-ef-core/main/Documents/EPCIS%201.2.postman_collection.json">Postman collection</a> and a <a href="https://raw.githubusercontent.com/FasTnT/epcis-ef-core/main/Documents/EPCIS%201.2%20queries-soapui-project.xml">SoapUI project</a> can be found on the GitHub repository.</p>
 			
 			<h3>Security</h3>
-			<p>Every request <i>must</i> include a Basic Authorization header. If the username specified is not found in the database, it will be created with the specified password. If the username already exists and the password doesn't match, or if the header is empty or malformed, the API will return a <code>401 - Unauthorized</code> response.</p>
+			<p>Every request <i>must</i> include a Basic Authorization header. If the header is empty or malformed the API will return a <code>401 - Unauthorized</code> response.</p>
+			<p>Each EPCIS event captured is linked to a hash value of the specified username/password, and is visible using only the same authentication values.</p>
 			
 			<h3>Capture events</h3>
-			<pre>POST https://fastnt-dev-api.azurewebsites.net/v1_2/capture
+			<pre>POST https://fastnt-dev.azurewebsites.net/v1_2/capture
 Authorization: Basic username:password
 Content-Type:text/xml
 
